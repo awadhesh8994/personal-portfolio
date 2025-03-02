@@ -1,13 +1,11 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () =>{
-    menuIcon.classList.toggle('bx-x')
-    navbar.classList.toggle('active');
-}
-fetch('https://api.countapi.xyz/hit/awadhesh-online.vercel.app//visits')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById('visitor-count').innerText = data.value;
-  })
-  .catch(error => console.error('Error fetching visitor count:', error));
+document.addEventListener("DOMContentLoaded", function () {
+  fetch('https://api.countapi.xyz/hit/awadhesh-online.vercel.app/visits')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('visitor-count').innerText = data.value;
+    })
+    .catch(error => console.error('Error fetching visitor count:', error));
+});
