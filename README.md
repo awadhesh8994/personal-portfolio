@@ -28,5 +28,4 @@ Awadhesh Kumar
 💼 Passionate about Web Development & Software Engineering
 🔗 LinkedIn • GitHub
 
-📜 License
-This project is open source and free to use under the MIT License.
+
